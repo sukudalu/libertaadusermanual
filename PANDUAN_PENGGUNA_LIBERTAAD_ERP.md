@@ -101,12 +101,12 @@ Sistem Libertaad ERP dirancang berbasis antarmuka web modern (*Libertadmin Web C
 1. **Login**: Buka halaman login web, masukkan email resmi (contoh: `admin@libertaad.id`) dan password dari IT.
    *Anda akan melihat*: Halaman login dengan logo Libertaad ERP dan form input email serta password.
    
-   ![Layar Login Awal](../assets/user/01_login_awal.png)
+   ![Layar Login Awal](./assets/user/01_login_awal.png)
 
 2. **Proteksi Anti Brute-Force**: Jika salah memasukkan kata sandi sebanyak 5 kali berturut-turut, akun akan **terkunci otomatis selama 15 menit**. Ini adalah fitur keamanan terverifikasi, bukan kerusakan sistem.
 3. **Reset Password**: Tidak disediakan menu ganti password mandiri demi keamanan. Reset wajib diajukan ke admin sistem melalui menu **"Pengguna"**. Setelah direset, seluruh sesi login lama otomatis terputus (*revoked*).
    
-   ![Pengguna Reset Password](../assets/user/19_pengguna_reset_password.png)
+   ![Pengguna Reset Password](./assets/user/19_pengguna_reset_password.png)
 
 4. **Disiplin Logout**: Selalu klik tombol **"Keluar"** saat meninggalkan komputer kerja atau perangkat bersama.
 
@@ -199,26 +199,26 @@ Dilakukan setiap akhir hari kerja saat salesman kembali ke kantor pusat membawa 
 1. Buka menu **"Kasir Settlement"** di panel navigasi.
    *Anda akan melihat*: Daftar faktur berstatus **PENDING**, memuat kolom No. Faktur, Toko, Metode Bayar, Nominal, dan bagian **"Klaim SFA:"**.
    
-   ![Kasir Settlement - Daftar PENDING](../assets/user/03_kasir_pending.png)
+   ![Kasir Settlement - Daftar PENDING](./assets/user/03_kasir_pending.png)
 
 2. Klik tombol **"Verifikasi"** pada baris setoran salesman. Muncul jendela verifikasi 3 tahap:
    - **Tahap 1: Verifikasi Fisik Uang Tunai**: Hitung uang tunai fisik yang diserahkan salesman dan bandingkan dengan nilai pada kolom *"Total Fisik Cash:"*.
    - **Tahap 2: Bukti Transfer Bank**: Cocokkan mutasi rekening koran bank dengan bukti transfer yang dilampirkan pelanggan.
    - **Tahap 3: Tanda Terima Kasir (TTK)**: Formulir pengesahan serah terima.
    
-   ![Kasir Settlement - Popup 3 Tahap](../assets/user/04_kasir_popup_verifikasi.png)
+   ![Kasir Settlement - Popup 3 Tahap](./assets/user/04_kasir_popup_verifikasi.png)
 
 3. **Pemeriksaan Selisih**:
    - Jika nilai uang fisik tepat sama dengan hitungan sistem, status bernilai **MATCH (Hijau)**.
    - Jika ada perbedaan nominal, sistem memunculkan kolom **"Selisih:"** dan penanda **SELISIH (Merah)**. Jangan dipaksa cocok; ketik alasan selisih pada kolom catatan kasir.
    
-   ![Kasir Settlement - Tampilan Selisih](../assets/user/05_kasir_selisih.png)
+   ![Kasir Settlement - Tampilan Selisih](./assets/user/05_kasir_selisih.png)
 
 4. **Pengesahan & Pencetakan TTK**:
    - Klik tombol **"Sahkan & Cetak TTK"**.
    - Sistem mencatat jurnal pelunasan kasir, mengupdate status order menjadi LUNAS, dan mencetak dokumen Tanda Terima Kasir (TTK) fisik.
    
-   ![TTK Tercetak - Preview](../assets/user/06_ttk_preview.png)
+   ![TTK Tercetak - Preview](./assets/user/06_ttk_preview.png)
 
 5. **Serahkan Dokumen TTK Fisik kepada Salesman** sebagai bukti resmi bahwa setoran telah diterima secara sah oleh kasir HO. Ini adalah titik akhir SOP harian bagi salesman.
 
@@ -228,7 +228,7 @@ Digunakan saat pelanggan umum atau pedagang datang langsung ke konter kasir pabr
 1. Buka menu **"POS Retail"** (ikon toko / `pos.html`).
    *Anda akan melihat*: Tampilan kasir modern dengan katalog barang di sisi kiri dan keranjang belanja di sisi kanan.
    
-   ![POS Retail - Keranjang Belanja](../assets/user/07_pos_retail_keranjang.png)
+   ![POS Retail - Keranjang Belanja](./assets/user/07_pos_retail_keranjang.png)
 
 2. Pilih **Gudang Pengirim** (stok produk yang tampil otomatis disesuaikan dengan saldo gudang terpilih).
 3. Pilih produk, tentukan jumlah kuantitas. Keranjang otomatis menghitung **Subtotal ➔ PPN (11%) ➔ Total Tagihan**.
@@ -239,7 +239,7 @@ Digunakan saat pelanggan umum atau pedagang datang langsung ke konter kasir pabr
 Buka menu **"Pelunasan"** (grup Keuangan).
 *Anda akan melihat*: Daftar riwayat settlement historis untuk kebutuhan audit pembukuan.
 
-![Pelunasan - Daftar Riwayat](../assets/user/08_pelunasan_riwayat.png)
+![Pelunasan - Daftar Riwayat](./assets/user/08_pelunasan_riwayat.png)
 
 ---
 
@@ -254,7 +254,7 @@ Digunakan saat distributor besar atau agen memesan barang dalam kuantitas karton
 1. Buka menu **Penjualan Head Office ➔ "Grosir Distributor"**.
    *Anda akan melihat*: Formulir pesanan grosir dengan 3 dropdown utama.
    
-   ![Grosir Distributor - 3 Dropdown & Keranjang](../assets/user/09_ho_grosir_form.png)
+   ![Grosir Distributor - 3 Dropdown & Keranjang](./assets/user/09_ho_grosir_form.png)
 
 2. Pilih **"-- Pilih Gudang --"**, **"-- Pilih Pelanggan --"**, dan **"-- Pilih Produk --"**.
 3. Masukkan item barang pada tabel **"Daftar Barang Belanja (Multi-Item)"**. Pilih satuan yang sesuai (**KRT** / **BOX**).
@@ -263,7 +263,7 @@ Digunakan saat distributor besar atau agen memesan barang dalam kuantitas karton
 6. ⚠️ **Peringatan Kredit Terkunci**:
    Jika muncul banner merah **"KREDIT TERKUNCI:"**, berarti toko tersebut telah melewati batas limit kredit atau memiliki nota macet > 14 hari. Sistem mengunci penerbitan pesanan secara otomatis. Arahkan pelanggan untuk menyelesaikan pelunasan dengan bagian keuangan.
    
-   ![Banner Kredit Terkunci](../assets/user/10_kredit_terkunci_banner.png)
+   ![Banner Kredit Terkunci](./assets/user/10_kredit_terkunci_banner.png)
 
 7. Klik tombol **"Terbitkan Faktur Order HO"**. Nomor order terbentuk (format `ORD-...`) dan data diteruskan ke gudang untuk proses pengiriman.
 
@@ -271,7 +271,7 @@ Digunakan saat distributor besar atau agen memesan barang dalam kuantitas karton
 1. Klik tab **"E-Commerce Online"**.
 2. Pilih saluran marketplace pada dropdown kanal: **Shopee**, **Tokopedia**, **TikTok Shop**, **Lazada**, atau **WhatsApp Official**.
    
-   ![E-Commerce Online - Dropdown Kanal](../assets/user/11_ho_online_channel.png)
+   ![E-Commerce Online - Dropdown Kanal](./assets/user/11_ho_online_channel.png)
 
 3. Masukkan Nomor Pesanan Marketplace dan Nomor Resi Kurir (Airway Bill / AWB).
 4. Masukkan potongan biaya komisi platform agar laporan omzet bersih tercatat secara akurat.
@@ -291,29 +291,29 @@ Gunakan menu **"Produk Custom"** untuk pesanan dengan spesifikasi kemasan, formu
 1. Buka aplikasi **Libertaad SFA** di ponsel Android Anda. Masukkan email dan kata sandi resmi.
    *Anda akan melihat*: Tampilan aplikasi dengan 4 tab navigasi bawah (**Rute · Toko · Stok Van · Riwayat**).
    
-   ![Login APK SFA & 4 Tab Bawah](../assets/user/20_sfa_login_tabs.png)
+   ![Login APK SFA & 4 Tab Bawah](./assets/user/20_sfa_login_tabs.png)
 
 2. Buka tab **"Rute"**. Layar menampilkan pesan **"Tiket rute belum diklaim."** dengan tombol **"Klaim Tiket Rute (QR)"**.
    
-   ![Klaim Tiket Rute QR](../assets/user/21_sfa_klaim_rute.png)
+   ![Klaim Tiket Rute QR](./assets/user/21_sfa_klaim_rute.png)
 
 3. Tekan tombol **"📷 Scan QR (kamera)"** dan arahkan kamera ponsel ke QR Code tiket rute yang disediakan gudang.
    *Anda akan melihat*: Indikator hijau **"Terdeteksi: ... Kode: ... Status: BERJALAN"**. Rute hari ini resmi aktif.
    
-   ![Scan QR Terdeteksi](../assets/user/22_sfa_scan_terdeteksi.png)
+   ![Scan QR Terdeteksi](./assets/user/22_sfa_scan_terdeteksi.png)
 
 ### 5.2. Kunjungan Toko: Check-in GPS, Input Order, & Alasan No-Order
 1. Buka tab **"Toko"**. Pilih nama toko yang akan dikunjungi dari daftar rute harian.
 2. Saat berada di depan toko, tekan tombol **"Check-in"**. Sistem mencatat koordinat lokasi GPS dan waktu kedatangan secara presisi.
    
-   ![Toko - Tombol Check-in](../assets/user/23_sfa_toko_checkin.png)
+   ![Toko - Tombol Check-in](./assets/user/23_sfa_toko_checkin.png)
 
 3. **Membuat Pesanan**:
    - Jika toko memesan barang, tekan **"+ Buat Order"**.
    - Pilih produk dan jumlah kuantitas, tentukan metode pembayaran (`TUNAI` atau `TOP_14 Tempo Kredit`).
    - Layar menampilkan rincian: **"No: ORD-..."** dan **"Total: Rp ..."**. Tekan Simpan Order.
    
-   ![Form Order SFA - No & Total](../assets/user/24_sfa_form_order.png)
+   ![Form Order SFA - No & Total](./assets/user/24_sfa_form_order.png)
 
 4. **Kunjungan Tanpa Belanja (No-Order)**:
    - Jika toko tidak melakukan pembelian, tetap lakukan Check-in.
@@ -324,7 +324,7 @@ Gunakan menu **"Produk Custom"** untuk pesanan dengan spesifikasi kemasan, formu
 1. Buka tab **"Stok Van"** untuk memeriksa sisa stok barang di kendaraan canvas Anda.
 2. Jika stok menipis, tekan **"+ Stock Request"** ➔ Tekan **"+ Baris"** untuk memilih SKU produk dan kuantitas penambahan stok yang dibutuhkan.
    
-   ![Stok Van - Stock Request Form](../assets/user/25_sfa_stock_request.png)
+   ![Stok Van - Stock Request Form](./assets/user/25_sfa_stock_request.png)
 
 3. Temui staf gudang untuk serah terima fisik barang. Begitu disahkan oleh gudang, status permintaan otomatis berubah menjadi **"✓ Stok sudah diterima sales"** dan saldo stok van Anda bertambah seketika.
 
@@ -336,11 +336,11 @@ Gunakan menu **"Produk Custom"** untuk pesanan dengan spesifikasi kemasan, formu
    - Salinan 2: **"SALINAN - SALES"** (Disimpan pribadi oleh salesman).
    - Salinan 3: **"ARSIP - GUDANG"** (Diserahkan ke staf gudang).
    
-   ![Struk Rekapitulasi Rute 3 Salinan](../assets/user/27_sfa_struk_rekap_3ply.png)
+   ![Struk Rekapitulasi Rute 3 Salinan](./assets/user/27_sfa_struk_rekap_3ply.png)
 
 4. Periksa tab **"Riwayat Transaksi & Piutang TOP"** dengan filter **ALL / LUNAS / BELUM_LUNAS** untuk memastikan tagihan piutang dan pembayaran tunai tercatat serasi.
    
-   ![Riwayat Transaksi & Piutang TOP](../assets/user/26_sfa_riwayat_piutang.png)
+   ![Riwayat Transaksi & Piutang TOP](./assets/user/26_sfa_riwayat_piutang.png)
 
 ---
 
@@ -353,7 +353,7 @@ Gunakan menu **"Produk Custom"** untuk pesanan dengan spesifikasi kemasan, formu
 Buka menu **"Stok Gudang"**.
 *Anda akan melihat*: Rincian stok fisik per gudang (stok baik, stok rusak, dialokasikan, dalam transit) beserta nilai valuasi inventori (*Inventory Value*).
 
-![Stok Gudang & Inventory Value](../assets/user/12_gudang_stok_value.png)
+![Stok Gudang & Inventory Value](./assets/user/12_gudang_stok_value.png)
 
 > **Aturan Emas Gudang**: Angka stok di Libertaad ERP **tidak pernah boleh diubah secara manual**. Setiap pergerakan stok wajib memiliki dokumen sumber resmi (DO, Stock Request, atau Penyesuaian Berita Acara yang disahkan supervisor).
 
@@ -361,7 +361,7 @@ Buka menu **"Stok Gudang"**.
 1. Buka menu **"Permintaan Stok (Sales)"**.
    *Anda akan melihat*: Daftar pengajuan stok van dari salesman dengan status bertahap (*Diajukan ➔ Disetujui ➔ Dikeluarkan ➔ Siap Serah ➔ Diterima*).
    
-   ![Permintaan Stok Sales - Penanda Diterima](../assets/user/13_gudang_permintaan_sales.png)
+   ![Permintaan Stok Sales - Penanda Diterima](./assets/user/13_gudang_permintaan_sales.png)
 
 2. Setujui permintaan dan keluarkan fisik barang dari rak gudang.
 3. Saat serah terima dengan salesman, pastikan salesman mengonfirmasi terima di aplikasi HP-nya hingga penanda hijau **"✓ Stok sudah diterima sales"** muncul di layar konsol Anda.
@@ -370,14 +370,14 @@ Buka menu **"Stok Gudang"**.
 Buka menu **"Daftar Pengambilan (FEFO)"**.
 *Anda akan melihat*: Urutan pengambilan batch produk yang wajib didahulukan berdasarkan tanggal kedaluwarsa terdekat (*First Expired, First Out*). Ambil barang mengikuti panduan baris layar, bukan sembarangan mengambil dari rak terdekat.
 
-![Daftar Pengambilan FEFO Urutan Batch](../assets/user/14_gudang_fefo_picking.png)
+![Daftar Pengambilan FEFO Urutan Batch](./assets/user/14_gudang_fefo_picking.png)
 
 ### 6.4. Tugas 4: Penerbitan Surat Jalan (Delivery Order / DO)
 1. Buka menu **"Surat Jalan"** (grup Gudang). Pilih order pesanan yang berstatus siap dikirim.
 2. Klik tombol **"Terbitkan DO"** ➔ Klik **"Terbitkan & Picking"**.
    *Anda akan melihat*: Nomor DO resmi terbentuk dan instruksi picking diteruskan ke tim gudang.
    
-   ![Surat Jalan - Tombol Terbitkan DO & Picking](../assets/user/15_gudang_terbitkan_do.png)
+   ![Surat Jalan - Tombol Terbitkan DO & Picking](./assets/user/15_gudang_terbitkan_do.png)
 
 ### 6.5. Tugas 5: Penerimaan & Retur Barang Pabrik
 Buka menu **"Pabrik (Isi Ulang/Retur)"**:
@@ -400,7 +400,7 @@ Saat tiba di lokasi toko pemesan:
 1. Buka halaman **"DRIVER POD DIGITAL"** di browser HP.
    *Anda akan melihat*: Formulir bukti serah terima digital lengkap dengan indikator **"📍 GPS Tagging Ready"**.
    
-   ![Driver POD Digital - 4 Kolom & TTD](../assets/user/28_driver_pod_form.png)
+   ![Driver POD Digital - 4 Kolom & TTD](./assets/user/28_driver_pod_form.png)
 
 2. **Lengkapi 4 Kolom Wajib (Bertanda *)**:
    - Nomor DO (contoh: `DO-2026-0924-001`).
@@ -420,7 +420,7 @@ Saat tiba di lokasi toko pemesan:
 ### 8.1. Tugas 1: Pemantauan Harian Real-time Lewat Dasbor
 Buka menu **"Dasbor"** di posisi paling atas. Layar menyajikan ringkasan real-time: Omzet Penjualan Hari Ini, Total Kunjungan Toko, Order Aktif, dan Sisa Persediaan tanpa perlu ketik ulang dari buku manual.
 
-![Dasbor Setelah Login](../assets/user/02_dasbor_setelah_login.png)
+![Dasbor Setelah Login](./assets/user/02_dasbor_setelah_login.png)
 
 ### 8.2. Tugas 2: Analisis 4 Pilar Laporan Operasional
 Buka menu **"Dasbor & Laporan"** (grup Laporan). Pilih filter periode (*Harian / Mingguan / Bulanan*).
@@ -430,24 +430,24 @@ Buka menu **"Dasbor & Laporan"** (grup Laporan). Pilih filter periode (*Harian /
 3. **Laporan Stok**: Nilai inventori, stok baik (PCS), dan stok rusak.
 4. **Piutang Baru**: Tagihan berjalan dan status pelunasan.
 
-![Dasbor & Laporan Indikator 4 Pilar](../assets/user/17_supervisor_laporan_indikator.png)
+![Dasbor & Laporan Indikator 4 Pilar](./assets/user/17_supervisor_laporan_indikator.png)
 
 ### 8.3. Tugas 3: Pengawasan Likuiditas, Piutang & Batas Kredit
 - **"Piutang Usaha"**: Memantau umur piutang (*aging*) per toko (0–14 hari, 15–30 hari, macet).
 - **"Pemeriksaan Kredit"**: Daftar batas kredit pelanggan. Toko yang melewati batas kredit otomatis berstatus **"KREDIT TERKUNCI"** dan tidak dapat memesan sebelum disetujui keuangan.
   
-  ![Pemeriksaan Kredit Pelanggan](../assets/user/16_supervisor_pemeriksaan_kredit.png)
+  ![Pemeriksaan Kredit Pelanggan](./assets/user/16_supervisor_pemeriksaan_kredit.png)
 
 ### 8.4. Tugas 4: Pengawasan Audit Log Aktivitas & Papan Kesehatan
 - **"Log Aktivitas"**: Merekam jejak audit keamanan (*Audit Trail*) secara transparan: siapa melakukan apa, kapan, dan dari alamat IP mana.
 - **"Papan Kesehatan"**: Memantau status koneksi basis data, latensi server, dan antrean sinkronisasi background.
 - **"Keamanan Akun"**: Memeriksa daftar perangkat aktif yang terhubung dan mengelola status kunci ganda (2FA).
   
-  ![Keamanan Akun & Setup 2FA](../assets/user/18_keamanan_akun_2fa.png)
+  ![Keamanan Akun & Setup 2FA](./assets/user/18_keamanan_akun_2fa.png)
 
 - **"Pengguna"**: Menu khusus administrator untuk mendaftarkan akun baru dan melakukan reset kata sandi staf.
   
-  ![Pengguna & Tombol Reset Password](../assets/user/19_pengguna_reset_password.png)
+  ![Pengguna & Tombol Reset Password](./assets/user/19_pengguna_reset_password.png)
 
 ---
 
@@ -472,7 +472,7 @@ Buka menu **"Dasbor & Laporan"** (grup Laporan). Pilih filter periode (*Harian /
 ### 9.4. Pembaruan Aplikasi Otomatis (OTA Update)
 Aplikasi Libertaad SFA memiliki fitur pembaruan mandiri dari server kantor (*Over-The-Air Update*). Begitu tim IT merilis versi baru, dialog pop-up konfirmasi pembaruan akan muncul otomatis di layar HP. Selesaikan transaksi berjalan, lalu klik **"Unduh & Pasang Update"**.
 
-![Prompt Update OTA Aplikasi SFA](../assets/user/29_sfa_ota_update_prompt.png)
+![Prompt Update OTA Aplikasi SFA](./assets/user/29_sfa_ota_update_prompt.png)
 
 ---
 
@@ -483,35 +483,35 @@ Berikut adalah matriks master 29 tangkapan layar yang diposisikan secara presisi
 ### 10.1. Matriks 29 Slot Tangkapan Layar
 | No | Kode Layar | Kategori | Penempatan di Panduan | Tautan Gambar Asset Standar |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `01_login_awal` | Web | Bab I (§1.3 Prosedur Login) | `![Layar Login Awal](../assets/user/01_login_awal.png)` |
-| 2 | `02_dasbor_setelah_login` | Web | Bab VIII (§8.1 Dasbor Harian) | `![Dasbor Setelah Login](../assets/user/02_dasbor_setelah_login.png)` |
-| 3 | `03_kasir_pending` | Web | Bab III (§3.1 Langkah 1) | `![Kasir Settlement PENDING](../assets/user/03_kasir_pending.png)` |
-| 4 | `04_kasir_popup_verifikasi`| Web | Bab III (§3.1 Langkah 2) | `![Kasir Popup 3 Tahap](../assets/user/04_kasir_popup_verifikasi.png)` |
-| 5 | `05_kasir_selisih` | Web | Bab III (§3.1 Langkah 3) | `![Kasir Tampilan Selisih](../assets/user/05_kasir_selisih.png)` |
-| 6 | `06_ttk_preview` | Web | Bab III (§3.1 Langkah 4) | `![Preview Cetak TTK](../assets/user/06_ttk_preview.png)` |
-| 7 | `07_pos_retail_keranjang` | Web | Bab III (§3.2 POS Retail) | `![POS Retail Keranjang](../assets/user/07_pos_retail_keranjang.png)` |
-| 8 | `08_pelunasan_riwayat` | Web | Bab III (§3.3 Pelunasan) | `![Pelunasan Riwayat](../assets/user/08_pelunasan_riwayat.png)` |
-| 9 | `09_ho_grosir_form` | Web | Bab IV (§4.1 Grosir HO) | `![Grosir Distributor Form](../assets/user/09_ho_grosir_form.png)` |
-| 10 | `10_kredit_terkunci_banner`| Web | Bab IV (§4.1 Langkah 6) | `![Kredit Terkunci Banner](../assets/user/10_kredit_terkunci_banner.png)` |
-| 11 | `11_ho_online_channel` | Web | Bab IV (§4.2 Online HO) | `![E-Commerce Online Dropdown](../assets/user/11_ho_online_channel.png)` |
-| 12 | `12_gudang_stok_value` | Web | Bab VI (§6.1 Stok Gudang) | `![Stok Gudang Value](../assets/user/12_gudang_stok_value.png)` |
-| 13 | `13_gudang_permintaan_sales`| Web | Bab VI (§6.2 Permintaan Van)| `![Permintaan Stok Sales](../assets/user/13_gudang_permintaan_sales.png)` |
-| 14 | `14_gudang_fefo_picking` | Web | Bab VI (§6.3 FEFO Picking) | `![Daftar Ambil FEFO](../assets/user/14_gudang_fefo_picking.png)` |
-| 15 | `15_gudang_terbitkan_do` | Web | Bab VI (§6.4 Terbitkan DO) | `![Surat Jalan Terbitkan DO](../assets/user/15_gudang_terbitkan_do.png)` |
-| 16 | `16_supervisor_pemeriksaan_kredit`| Web| Bab VIII (§8.3 Limit Kredit)| `![Pemeriksaan Kredit](../assets/user/16_supervisor_pemeriksaan_kredit.png)` |
-| 17 | `17_supervisor_laporan_indikator`| Web| Bab VIII (§8.2 4 Pilar Laporan)| `![Dasbor Laporan Indikator](../assets/user/17_supervisor_laporan_indikator.png)` |
-| 18 | `18_keamanan_akun_2fa` | Web | Bab VIII (§8.4 Keamanan 2FA)| `![Keamanan Akun 2FA](../assets/user/18_keamanan_akun_2fa.png)` |
-| 19 | `19_pengguna_reset_password`| Web | Bab VIII (§8.4 Reset Sandi) | `![Pengguna Reset Password](../assets/user/19_pengguna_reset_password.png)` |
-| 20 | `20_sfa_login_tabs` | Mobile| Bab V (§5.1 Login SFA) | `![SFA Login 4 Tab](../assets/user/20_sfa_login_tabs.png)` |
-| 21 | `21_sfa_klaim_rute` | Mobile| Bab V (§5.1 Klaim Rute) | `![SFA Klaim Rute QR](../assets/user/21_sfa_klaim_rute.png)` |
-| 22 | `22_sfa_scan_terdeteksi` | Mobile| Bab V (§5.1 Scan Kamera) | `![SFA Scan Terdeteksi](../assets/user/22_sfa_scan_terdeteksi.png)` |
-| 23 | `23_sfa_toko_checkin` | Mobile| Bab V (§5.2 Check-in Toko) | `![SFA Toko Checkin](../assets/user/23_sfa_toko_checkin.png)` |
-| 24 | `24_sfa_form_order` | Mobile| Bab V (§5.2 Form Order) | `![SFA Form Order](../assets/user/24_sfa_form_order.png)` |
-| 25 | `25_sfa_stock_request` | Mobile| Bab V (§5.3 Stock Request)| `![SFA Stock Request](../assets/user/25_sfa_stock_request.png)` |
-| 26 | `26_sfa_riwayat_piutang` | Mobile| Bab V (§5.4 Riwayat TOP) | `![SFA Riwayat Piutang](../assets/user/26_sfa_riwayat_piutang.png)` |
-| 27 | `27_sfa_struk_rekap_3ply` | Mobile| Bab V (§5.4 Struk Rekap) | `![SFA Struk Rekap 3Ply](../assets/user/27_sfa_struk_rekap_3ply.png)` |
-| 28 | `28_driver_pod_form` | Mobile| Bab VII (§7.2 Form POD) | `![Driver POD Form](../assets/user/28_driver_pod_form.png)` |
-| 29 | `29_sfa_ota_update_prompt`| Mobile| Bab IX (§9.4 Prompt OTA) | `![SFA OTA Update Prompt](../assets/user/29_sfa_ota_update_prompt.png)` |
+| 1 | `01_login_awal` | Web | Bab I (§1.3 Prosedur Login) | `![Layar Login Awal](./assets/user/01_login_awal.png)` |
+| 2 | `02_dasbor_setelah_login` | Web | Bab VIII (§8.1 Dasbor Harian) | `![Dasbor Setelah Login](./assets/user/02_dasbor_setelah_login.png)` |
+| 3 | `03_kasir_pending` | Web | Bab III (§3.1 Langkah 1) | `![Kasir Settlement PENDING](./assets/user/03_kasir_pending.png)` |
+| 4 | `04_kasir_popup_verifikasi`| Web | Bab III (§3.1 Langkah 2) | `![Kasir Popup 3 Tahap](./assets/user/04_kasir_popup_verifikasi.png)` |
+| 5 | `05_kasir_selisih` | Web | Bab III (§3.1 Langkah 3) | `![Kasir Tampilan Selisih](./assets/user/05_kasir_selisih.png)` |
+| 6 | `06_ttk_preview` | Web | Bab III (§3.1 Langkah 4) | `![Preview Cetak TTK](./assets/user/06_ttk_preview.png)` |
+| 7 | `07_pos_retail_keranjang` | Web | Bab III (§3.2 POS Retail) | `![POS Retail Keranjang](./assets/user/07_pos_retail_keranjang.png)` |
+| 8 | `08_pelunasan_riwayat` | Web | Bab III (§3.3 Pelunasan) | `![Pelunasan Riwayat](./assets/user/08_pelunasan_riwayat.png)` |
+| 9 | `09_ho_grosir_form` | Web | Bab IV (§4.1 Grosir HO) | `![Grosir Distributor Form](./assets/user/09_ho_grosir_form.png)` |
+| 10 | `10_kredit_terkunci_banner`| Web | Bab IV (§4.1 Langkah 6) | `![Kredit Terkunci Banner](./assets/user/10_kredit_terkunci_banner.png)` |
+| 11 | `11_ho_online_channel` | Web | Bab IV (§4.2 Online HO) | `![E-Commerce Online Dropdown](./assets/user/11_ho_online_channel.png)` |
+| 12 | `12_gudang_stok_value` | Web | Bab VI (§6.1 Stok Gudang) | `![Stok Gudang Value](./assets/user/12_gudang_stok_value.png)` |
+| 13 | `13_gudang_permintaan_sales`| Web | Bab VI (§6.2 Permintaan Van)| `![Permintaan Stok Sales](./assets/user/13_gudang_permintaan_sales.png)` |
+| 14 | `14_gudang_fefo_picking` | Web | Bab VI (§6.3 FEFO Picking) | `![Daftar Ambil FEFO](./assets/user/14_gudang_fefo_picking.png)` |
+| 15 | `15_gudang_terbitkan_do` | Web | Bab VI (§6.4 Terbitkan DO) | `![Surat Jalan Terbitkan DO](./assets/user/15_gudang_terbitkan_do.png)` |
+| 16 | `16_supervisor_pemeriksaan_kredit`| Web| Bab VIII (§8.3 Limit Kredit)| `![Pemeriksaan Kredit](./assets/user/16_supervisor_pemeriksaan_kredit.png)` |
+| 17 | `17_supervisor_laporan_indikator`| Web| Bab VIII (§8.2 4 Pilar Laporan)| `![Dasbor Laporan Indikator](./assets/user/17_supervisor_laporan_indikator.png)` |
+| 18 | `18_keamanan_akun_2fa` | Web | Bab VIII (§8.4 Keamanan 2FA)| `![Keamanan Akun 2FA](./assets/user/18_keamanan_akun_2fa.png)` |
+| 19 | `19_pengguna_reset_password`| Web | Bab VIII (§8.4 Reset Sandi) | `![Pengguna Reset Password](./assets/user/19_pengguna_reset_password.png)` |
+| 20 | `20_sfa_login_tabs` | Mobile| Bab V (§5.1 Login SFA) | `![SFA Login 4 Tab](./assets/user/20_sfa_login_tabs.png)` |
+| 21 | `21_sfa_klaim_rute` | Mobile| Bab V (§5.1 Klaim Rute) | `![SFA Klaim Rute QR](./assets/user/21_sfa_klaim_rute.png)` |
+| 22 | `22_sfa_scan_terdeteksi` | Mobile| Bab V (§5.1 Scan Kamera) | `![SFA Scan Terdeteksi](./assets/user/22_sfa_scan_terdeteksi.png)` |
+| 23 | `23_sfa_toko_checkin` | Mobile| Bab V (§5.2 Check-in Toko) | `![SFA Toko Checkin](./assets/user/23_sfa_toko_checkin.png)` |
+| 24 | `24_sfa_form_order` | Mobile| Bab V (§5.2 Form Order) | `![SFA Form Order](./assets/user/24_sfa_form_order.png)` |
+| 25 | `25_sfa_stock_request` | Mobile| Bab V (§5.3 Stock Request)| `![SFA Stock Request](./assets/user/25_sfa_stock_request.png)` |
+| 26 | `26_sfa_riwayat_piutang` | Mobile| Bab V (§5.4 Riwayat TOP) | `![SFA Riwayat Piutang](./assets/user/26_sfa_riwayat_piutang.png)` |
+| 27 | `27_sfa_struk_rekap_3ply` | Mobile| Bab V (§5.4 Struk Rekap) | `![SFA Struk Rekap 3Ply](./assets/user/27_sfa_struk_rekap_3ply.png)` |
+| 28 | `28_driver_pod_form` | Mobile| Bab VII (§7.2 Form POD) | `![Driver POD Form](./assets/user/28_driver_pod_form.png)` |
+| 29 | `29_sfa_ota_update_prompt`| Mobile| Bab IX (§9.4 Prompt OTA) | `![SFA OTA Update Prompt](./assets/user/29_sfa_ota_update_prompt.png)` |
 
 ---
 
